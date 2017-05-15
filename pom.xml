@@ -11,6 +11,11 @@
   <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>4.3.7.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
       <version>4.3.7.RELEASE</version>
     </dependency>
@@ -22,10 +27,11 @@
       <scope>test</scope>
     </dependency>
 
+    <!-- MySQL database driver -->
     <dependency>
-      <groupId>com.github.spullara.mustache.java</groupId>
-      <artifactId>compiler</artifactId>
-      <version>0.9.2</version>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.9</version>
     </dependency>
 
   </dependencies>
