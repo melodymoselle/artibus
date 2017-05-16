@@ -3,30 +3,26 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Artibus</title>
-	<link rel="stylesheet" href="../resources/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	<%--<link rel="stylesheet" href="<spring:url value="/resources/css/home.css"/>" type="text/css"/>--%>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="../resources/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-</head>
+<jsp:include page="../views/fragments/head.jsp"/>
 <body>
 
-<div class="wrapper">
+<div class="container">
+	<div class="row">
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#login">Login</a></li>
+			<li><a data-toggle="tab" href="#register">Register</a></li>
+		</ul>
 
-	<!-- CONTENT --------------------------------------------------------------------------------->
-
-	<!-- Login Section -->
-	<section id="main" class="">
-		<div class="container">
-			<div class="row">
-
+		<div class="tab-content">
+			<div id="login" class="tab-pane fade in active">
+				<h3>HOME</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
-		</div>
-	</section>
-	<!-- End Login Section -->
-
+			<div id="register" class="tab-pane fade">
+				<h3>Menu 1</h3>
+				<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+	</div>
 </div>
 
 </body>
