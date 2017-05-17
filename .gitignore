@@ -4,3 +4,4 @@
 *.iml
 
 target/artibus/WEB-INF/lib/
+target/artibus/resources/
